@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        .user {
+            height: 100px;
+            width: 100px;
+            background-color: grey;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+
+        .c1 {
+            height: 150px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        h1 {
+            position: relative;
+            top: -150px;
+            left: 30px;
+            color: royalblue;
+        }
+
+        .frm {
+            position: relative;
+            top: -200px;
+            left: 1181px;
+
+        }
+
+        button {
+            width: 225px;
+            height: 40px;
+            background-color: rgb(49, 49, 93);
+            color: aqua;
+            border: 0;
+            transition-duration: 0.5s;
+
+        }
+
+        button:hover {
+            width: 225px;
+            height: 40px;
+            background-color: rgb(50, 50, 154);
+            color: aqua;
+            border: 0;
+            transition-duration: 0.5s;
+        }
+
+        .content {
+            width: 70%;
+            height: 1600px;
+            background-color: rgb(9, 25, 72);
+            color:rgb(128, 154, 235);
+            text-align: center;
+        }
+
+        .c2{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top:115px;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .heading{
+            font-size: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="c1">
+        <div class="user">User Profile Picture</div>
+    </div>
+    <h1>Thaker Industries</h1>
+    <form action="/logout" method="post" class="frm">
+        <button type="submit" class="btn">Logout</button>
+    </form>
+    <div class="c2">
+    <div class="content">
+        <p class="heading">Our Arsenal</p>
+
+    </div></div>
+</body>
+
+</html>

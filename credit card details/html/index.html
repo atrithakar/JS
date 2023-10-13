@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Details</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: red;
+
+        }
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            /* background-color: teal; */
+        }
+
+        .cvv {
+            width: 60px;
+
+        }
+
+        input {
+            margin: 5px;
+        }
+
+        .date {
+            position: relative;
+            top: -1px;
+            height: 17px;
+            width: 161px
+        }
+
+        button {
+            width: 150px;
+            color:red;
+            font-weight: bolder;
+            background-color: rgb(65, 225, 182);
+            /* border-color: royalblue; */
+            border-width: 0;
+        }
+
+        .cn {
+            width: 240px;
+        }
+        
+        .h{
+            height: 25px;
+            
+        }
+        .chn{
+            width: 240px;
+
+        }
+        input{
+            text-align: center;
+            border-width: 0 0 3px 0;
+            border-color: red;
+            color: cyan;
+            background-color: rgb(91, 91, 91);
+            font-weight: bold;   
+        }
+        .save{
+            background-color: black;
+            accent-color: #ff2d2d;
+        }
+        .frm{
+            /* border-color: rgb(14, 0, 103); */
+            /* border-width: 2px; */
+            background-color: transparent;
+            box-shadow: 0px 0px 64px 24px cyan;
+            /* border-radius: 50px; */
+            padding: 10px;
+            transition-duration: 0.5s;
+        }
+        
+        .frm:hover{
+            /* background-color: rgb(13, 13, 138); */
+            box-shadow: 0px 0px 64px 24px rgb(88, 163, 58);
+            scale: 1.2;
+            transition-duration: 0.5s;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- card number
+    cvv number
+    holder name
+    expiry date -->
+    <div class="container">
+        <form action="/ccd" method="post" class="frm">
+            <h2>Online Bill Payment</h2><br>
+            <input type="text" name="CardNumber" id="cn" placeholder="Card Number" class="cn h"><br>
+            <input type="date" name="ExpiryDate" id="ed" placeholder="Expiry Date" class="date h">
+            <input type="password" name="CVVNumber" id="cvv" placeholder="CVV" class="cvv h"><br>
+            <input type="text" name="CardHolderName" id="chn" placeholder="Card Holder Name" class="h chn"><br>
+            <label for="SaveCard">Save Card</label><input type="checkbox" name="SaveCard" id="sc" class="save">
+            <button type="submit" class="h">Pay</button>
+        </form>
+    </div>
+</body>
+
+</html>

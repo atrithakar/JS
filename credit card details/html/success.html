@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Successful</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            color: rgb(169, 81, 81);
+            background-color: black;
+        }
+
+        table,
+        th,
+        td {
+            border-bottom: 3px solid rgb(2, 109, 109);
+            border-collapse: collapse;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 100px;
+        }
+
+        td {
+            font-size: 28px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td>Status:</td>
+                <td>Successful</td>
+            </tr>
+            <tr>
+                <td>Transaction ID:</td>
+                <td>{TRANSACTION ID HERE}</td>
+            </tr>
+            <tr>
+                <td>Amount Paid:</td>
+                <td>{AMOUNT HERE}</td>
+            </tr>
+            <tr>
+                <td>Paid To:</td>
+                <td>{RECEIVER'S BANK ACCOUNT NO.}</td>
+            </tr>
+            <tr>
+                <td>Paid From:</td>
+                <td>{SENDER'S BANK ACCOUNT NO.}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+
+div{
+    background-color: beige;
+    height: 100em;
+    width: 60em;
+    /* border-radius: 50%; */
+    margin: auto;
+    
+}
+body{
+    background-color: aquamarine;
+}
+h1{
+    text-align: center;
+    background-color: yellow;
+    color: red;
+}

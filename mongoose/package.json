@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "mongoose": "^7.5.3"
+  },
+  "name": "mongoose",
+  "version": "1.0.0",
+  "description": "this is mongoose tutorial",
+  "main": "mongoosetut.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mongoose"
+  ],
+  "author": "atri thaker",
+  "license": "ISC"
+}
